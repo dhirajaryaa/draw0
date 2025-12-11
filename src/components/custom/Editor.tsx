@@ -2,11 +2,15 @@
 
 import { Excalidraw } from "@excalidraw/excalidraw";
 import "@excalidraw/excalidraw/index.css";
+// custom
+import { Menu as CustomMenu } from "@/components/custom/Menu";
 
 function Editor() {
   return (
     <>
-      <Excalidraw></Excalidraw>
+      <Excalidraw>
+        <CustomMenu />
+      </Excalidraw>
     </>
   );
 }
